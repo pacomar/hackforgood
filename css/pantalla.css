@@ -1,0 +1,57 @@
+#pantalla{
+    width: 500px;
+    height: 150px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    float:left;
+}
+#lineaInferior{
+    position: absolute;
+    top: 150px;
+    height: 40px;
+    width: 500px;
+    background-color: gray;
+}
+#temperatura{
+    height: 40px;
+    width: 80px;
+    float: left;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(194, 166, 82);
+}
+#hora{
+    float: left;
+    height: 40px;
+    width: 266px;
+    font-size: 35px;
+    text-align: center;
+    border-left: 1px solid black;
+}
+.flechaAparcamiento{
+    float: left;
+    height: 40px;
+    width: 50px;
+    border-left: 1px solid black;
+    text-align: center;
+    font-size: 32px;
+}
+#flechaIzquierda{
+    color: red;
+}
+#flechaDerecha{
+    color: red;
+}
+#flechaRecta{
+    color: red;
+}
+
+#contenido ul{
+    padding: 0;
+    margin: 10px;
+}
+
+#contenido li{
+    font-size: 20px;
+}

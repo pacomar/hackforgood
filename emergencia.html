@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Pantalla de emergencia</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/pantalla.css" />
+    <link rel="stylesheet" href="css/emergencia.css" />
+</head>
+<body>
+    <nav id="menuSuperior">
+        <a href="atasco.html">Atascos</a>
+        <a href="emergencia.html">Emergencia</a>
+        <a href="publicidad.html">Publicidad</a>
+    </nav>
+    <div id="pantalla">
+        <header>
+            <h2>V. EMERGENCIA</h2>
+        </header>
+        <div id="contenido">
+            <div id="flechaDerecha1" class="flechaEmergencia">
+                →
+            </div>
+            <div id="flechaDerecha2" class="flechaEmergencia">
+                →
+            </div>
+            <div id="flechaDerecha3" class="flechaEmergencia">
+                →
+            </div>
+            <div id="flechaDerecha3" class="flechaEmergencia">
+                →
+            </div>
+        </div>
+        <div id="lineaInferior">
+            <div id="temperatura">
+                28º
+            </div>
+            <div id="hora">
+
+            </div>
+            <div id="aparcamiento">
+                <div id="flechaIzquierda" class="flechaAparcamiento">
+                    ←
+                </div>
+                <div id="flechaRecta" class="flechaAparcamiento">
+                    ↑
+                </div>
+                <div id="flechaDerecha" class="flechaAparcamiento">
+                    →
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/lib/jquery-1.11.2.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/flechasEmergencia.js"></script>
+    <script src="js/temperature.js"></script>
+    <script src="js/atasco.js"></script>
+</body>
+</html>

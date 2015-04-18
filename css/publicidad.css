@@ -1,0 +1,25 @@
+#pantalla{
+    background-color: black;
+}
+#pantalla h2{
+    color: white;
+    margin: 10px;
+}
+.flechaEmergencia{
+    width: 99px;
+    float: left;
+    height: 71px;
+    font-size: 101px;
+    color: rgb(223, 135, 21);
+    line-height: 73px;
+}
+#contenido{
+    width: 400px;
+    height: 71px;
+    margin: -9px auto;
+}
+img{
+    width: 278px;
+    margin: 0 auto;
+    display: block;
+}

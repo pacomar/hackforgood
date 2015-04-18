@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function enviaDatos(){
+            var temp = $("#temperatura").val();
+            var sensorI = $("#sensorI").val();
+            var sensorC = $("#sensorC").val();
+            var sensorD = $("#sensorD").val();
+            var url = "https://api.thingspeak.com/update.json?api_key=3A5PX2E4Y491ZOD7&field1="+temp+"&field2="+sensorI+"&field3="+sensorC+"&field4="+sensorD;
+            $.get( url, function( data ) {
+                $("#temperatura").val("");
+                $("#sensorI").val("");
+                $("#sensorC").val("");
+                $("#sensorD").val("");
+            });
+        }
+    </script>
+    Temperatura: <input type="text" id="temperatura"/> <br/>
+    Sensor Izquierda: <input type="text" id="sensorI"/> <br/>
+    Sensor Centro: <input type="text" id="sensorC"/> <br/>
+    Sensor Derecha: <input type="text" id="sensorD"/> <br/>
+    <input type="button" onclick="enviaDatos()" value="Enviar"/>
+
+    <script src="../js/lib/jquery-1.11.2.js"></script>
+</body>
+</html>
